@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berit Stange - myMovies App</title>
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lora:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="wide">
+            <a href="../index.html" class="page-header__item logo">BERIT STANGE</a>
+        </div>
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="../index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="../about.html" role="menuitem" class="navigation-list__item">About me</a>
+                </li>
+                <li role="presentation">
+                    <a href="../work.html" role="menuitem" class="navigation-list__item ">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="../contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile">
+        <div class="main-content case-study-content">
+            <h1>Case Study: myMovies App</h1>
+
+            <!-- BEGINNING: INTRODUCTION, PROBLEM + SOLUTION -->
+            <h2>INTRODUCTION</h2>
+            <div>
+                <p> myMovies is a web app fpr movie fans, that offers information about movies, directors, and genres.
+                    Users can create a profile, update their data, and collect their favorite movies.
+                    The project involved creating a RESTful API, building the databse with Mongo DB and
+                    the client-side using React/Redux and Bootstrap.
+                </p>
+                <h3>PROBLEM TO SOLVE + CONTEXT</h3>
+                <p>The app was supposed to satisfy an interest in movies: discover movies by title and let the user
+                    collect movies and offer further information, like showing what other movies a director has made.
+                    <br>
+                    On the technical side the requirement for the app was to be dynamic and single page, be responsive.
+                    <br>
+                    myMovies was part of the web development course at CareerFoundry to build
+                    skills in React and Redux, connecting to a self created API and implement
+                    Bootstrap for the UI.
+                </p>
+                <h3>GOAL</h3>
+                <p>Create a single page, responsive web app that handles dynamic contect and has a pleasing and
+                    intuitive UI.
+                </p>
+            </div>
+
+            <!-- MIDDLE PART: APPROACH + STEPS -->
+            <div>
+                <h2>APPROACH</h2>
+                <div>
+                    <h3>1. Step: Create the Server Side</h3>
+                    <p>
+                        RESTful API using Node.js and Express<br>
+                        create database collections manually to learn the structure of the objects<br>
+                        set up database Mongo DB (kind of databse?)<br>
+                        HTTP methods for API access + CRUD methods for database access<br>
+                        testing the API with Postman<br>
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img src="../img/my-movies-02_movie-by-title.png" alt="" class="work-img">
+                </div>
+                <div>
+                    <h3>2. Step: Create the Client Side</h3>
+                    <p>
+                        created components with React and Redux<br>
+                        app routing in main view<br>
+                        registration and login views<br>
+                        displaying list of movies with a search function tha searches titles<br>
+                        movie view, director and genre views with detailed information<br>
+                        movie view has a button to add the movie to list of favorites<br>
+                        profile view with list of favorites and form to update user data<br>
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img src="../img/my-movies-Screenshot 2021-07-22 17.11.28.png" alt="" class="work-img">
+                </div>
+            </div>
+
+            <!-- END: CHALLENGE + FURTHER STEPS -->
+            <div>
+                <h2>CHALLENGE + DURATION STEPS</h2>
+                <div>
+                    <h3>CHALLENGE</h3>
+                    <p>
+                        the genreal structure of React and the use of props and state <br>
+                        how things are connected, how data is being passed, keeping the orientation <br>
+                        Redux and the use of the state in this case > sessions with mentor and real live React-developer
+                        <br>
+
+                    </p>
+                </div>
+                <div class="img-container">
+                    <!-- <img src="../img/my-movies-02_movie-by-title.png" alt="" class="work-img"> -->
+                </div>
+                <div>
+                    <h3>DURATION + NEXT STEPS</h3>
+                    <p>
+                        1 month / 2000 hours <br>
+                        next step will be to implement Redux Thunk, structure code differently, isolate the function
+                        <br>
+
+                    </p>
+                </div>
+                <div class="img-container">
+                    <!-- <img src="../img/my-movies-Screenshot 2021-07-22 17.11.28.png" alt="" class="work-img"> -->
+                </div>
+            </div>
+
+
+            <a href="https://mymovies-app.netlify.app/">See Web Application</a> <br>
+            <a href="https://github.com/berit-stange/myMovies-client">See Code on GitHub</a> <br>
+            <a href="#">See myMovies App in use on YouTube</a> <br>
+
+        </div>
+
+    </main>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div>
+            <!-- Github logo -->
+            <img src="../img/icon-github.svg" alt="github">
+            <!-- Twitter logo -->
+            <img src="../img/icon-twitter.svg" alt="twitter">
+            <!-- LinkedIn logo -->
+            <img src="../img/icon-linkedin.svg" alt="linkedin">
+        </div>
+    </footer>
+    <!-- <script src="js/tota11y.min.js"></script> -->
+</body>
+
+</html>

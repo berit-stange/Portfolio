@@ -52,6 +52,10 @@ div {
   margin: 10px;
 }
 
+/* p {
+  text-align: left;
+} */
+
 a {
   color: var(--primary-color);
   /* text-decoration: none; */
@@ -238,6 +242,11 @@ button:focus,
   padding-bottom: 20px;
 }
 
+/* .main-content p {
+  width: 70%;
+  text-align: left; 
+} */
+
 .main-content__table {
   margin: 0 auto;
 }
@@ -252,6 +261,11 @@ button:focus,
   /* margin-right: 40px; */
   /* border-radius: 50%; */
 }
+/* ------------------------------------ content case study---- */
+.case-study-content p {
+  text-align: left; 
+}
+
 
 /* -----------------------------------------------------2020-12-15 media queries ---- */
 @media all and (max-width: 500px) {
