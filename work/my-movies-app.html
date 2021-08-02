@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lora:wght@700&display=swap"
         rel="stylesheet">
-<!--    <link rel="stylesheet" type="text/css" href="../css/styles.css">-->
+    <!--    <link rel="stylesheet" type="text/css" href="../css/styles.css">-->
     <link rel="stylesheet" type="text/css" href="../css/styles-light.css">
 </head>
 
@@ -35,29 +35,31 @@
             </ul>
         </nav>
     </header>
-    
+
     <main class="case-study">
         <div class="case-study-content">
             <h1>Case Study: myMovies App</h1>
 
             <!-- BEGINNING: INTRODUCTION, PROBLEM + SOLUTION -->
             <div class="case-study-intro">
-            <h2>INTRODUCTION</h2>
-                <p> myMovies is a web app fpr movie fans, that offers information about movies, directors, and genres.
+                <h2>INTRODUCTION</h2>
+                <p> myMovies is a web app for movie fans, that offers information about movies, directors, and genres.
                     Users can create a profile, update their data, and collect their favorite movies.
                     The project involved creating a RESTful API, building the databse with Mongo DB and
                     the client-side using React/Redux and Bootstrap.
                 </p>
-                </div>
-                
-                <div class="case-study-container">
+            </div>
+
+            <div class="case-study-container">
                 <h3>OBJECTIVE</h3>
                 <p>
-                   The app was supposed to satisfy an interest in movies: discover movies by title and let the user collect movies and offer further information, like showing what other movies a director has made.
+                    The app was supposed to satisfy an interest in movies: discover movies by title and let the user
+                    collect movies and offer further information, like showing what other movies a director has made.
                     <br>
-                    On the technical side the requirement for the app was to be dynamic and single page, be responsive and has a pleasing and intuitive UI.
+                    On the technical side the requirement for the app was to be dynamic and single page, be responsive
+                    and has a pleasing and intuitive UI.
                 </p>
-                
+
                 <h3>CONTEXT</h3>
                 <p>
                     The myMovies application was part of the web development course at CareerFoundry to build
@@ -68,66 +70,80 @@
 
             <!-- MIDDLE PART: APPROACH + STEPS -->
             <div class="background-light">
-            <h2>APPROACH</h2>
-            <div class="case-study-container">
+                <h2>APPROACH</h2>
+                <div class="case-study-container">
                     <h3>1. Step: Create the Server Side</h3>
                     <p>
-                        The first step was to create a RESTful API using Node.js and Express. For this, code with the HTTP methods for the endpoints had to be written, while looking at the user stories from the project brief. <br>
-                        After that I learned how to create database collections manually to learn the structure of the objects. After that the database was set up with Mongo DB. <br>
+                        The first step was to create a RESTful API using Node.js and Express. For this, code with the
+                        HTTP methods for the endpoints had to be written, while looking at the user stories from the
+                        project brief. <br>
+                        After that I learned how to create database collections manually to learn the structure of the
+                        objects. After that the database was set up with Mongo DB. <br>
                     </p>
-                <div>
-                    <img src="../img/my-movies-02_movie-by-title.png" alt="" class="work-img">
-                </div>
+                    <div>
+                        <img src="../img/my-movies-02_movie-by-title.png" alt="" class="work-img">
+                    </div>
                     <h3>2. Step: Create the Client Side</h3>
                     <p>
                         In the second part of building the app, I created the components with React.<br>
-                        The main view component contained the app routing, and there had to be a registration and a login components, handling the authentication.<br>
-                        The main view displays list of movies, based on a function that maps through all movies and creates movie card components. <br>
-                        Movie view, director and genre views get detailed information from the database and display them. <br>
-                        Functions to add and delete a movie from a list of favorites were added, as well as updating and deleting user data. <br>
-                        At this point the first part of the project, the server side, came together with the client side, all connected and accessible through the UI. 
+                        The main view component contained the app routing, and there had to be a registration and a
+                        login components, handling the authentication.<br>
+                        The main view displays list of movies, based on a function that maps through all movies and
+                        creates movie card components. <br>
+                        Movie view, director and genre views get detailed information from the database and display
+                        them. <br>
+                        Functions to add and delete a movie from a list of favorites were added, as well as updating and
+                        deleting user data. <br>
+                        At this point the first part of the project, the server side, came together with the client
+                        side - all connected and accessible through the UI.
                     </p>
-                <div>
-                    <img src="../img/my-movies-screenshot-movielist-2021-07-22.jpg" alt="" class="work-img">
+                    <div>
+                        <img src="../img/my-movies-screenshot-movielist-2021-07-22.jpg" alt="" class="work-img">
+                    </div>
+                    <div>
+                        <img src="../img/my-movies-screenshot-movieview-2021-07-22.jpg" alt="" class="work-img">
+                    </div>
+                    <div>
+                        <img src="../img/my-movies-screenshot-profile-2021-07-22.jpg" alt="" class="work-img">
+                    </div>
                 </div>
-                <div>
-                    <img src="../img/my-movies-screenshot-movieview-2021-07-22.jpg" alt="" class="work-img">
-                </div>
-                <div>
-                    <img src="../img/my-movies-screenshot-profile-2021-07-22.jpg" alt="" class="work-img">
-                </div>
-            </div>
             </div>
 
             <!-- END: CHALLENGE + FURTHER STEPS -->
             <h2>CHALLENGES, DURATION + STEPS</h2>
-            <div  class="case-study-intro">
-                    <h3>CHALLENGES</h3>
-                    <p>
-                        It was challenging to understand the genreal structure of React and the use of props and state, how things are connected, how data is being passed. <br>
-                        I found it difficult to find the right way to filter the favorite movies of a user and to implement the authetication. <br> 
-                        To keep an orientation I got help from my mentor and a React developer I know. 
-                    </p>
-                
-                    <h3>DURATION + NEXT STEPS</h3>
-                    <p>
-                        Both parts of the application together, the server side and the client side, took me about 2 months.<br>
-                        The next step will be to refactor the code using Redux Thunk, structure code differently, isolate the function. Also some work on the buttons in the profile view could be made.
-                        <br>
-                    </p>
-                
-            <h3>LINKS</h3>
-            <a href="https://mymovies-app.netlify.app/">See Web Application |</a>
-            <a href="https://github.com/berit-stange/myMovies-client">See Code on GitHub</a>
-            
+            <div class="case-study-intro">
+                <h3>CHALLENGES</h3>
+                <p>
+                    It was challenging to understand the general structure of React and the use of props and state, how
+                    things are connected, how data is passed between components and how it can be accessed in the
+                    database
+                    to be used in the functions. <br>
+                    I found it difficult to find the right way to filter the favorite movies of a user and to implement
+                    the authetication. <br>
+                    To keep an orientation I got help from my mentor and a React developer I know.
+                </p>
+
+                <h3>DURATION + NEXT STEPS</h3>
+                <p>
+                    Both parts of the application together, the server side and the client side, took me about 2
+                    months.<br>
+                    The next step will be to refactor the code using Redux Thunk, structure code differently, isolate
+                    the function. Also some work on the buttons in the profile view could be made.
+                    <br>
+                </p>
+
+                <h3>LINKS</h3>
+                <a href="https://mymovies-app.netlify.app/">See Web Application |</a>
+                <a href="https://github.com/berit-stange/myMovies-client">See Code on GitHub</a>
+
             </div>
-            
+
         </div>
 
     </main>
-    
-    
-    
+
+
+
     <footer class="page-footer">
         <p>Find me on</p>
         <div>
