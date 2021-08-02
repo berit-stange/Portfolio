@@ -262,7 +262,7 @@ input {
 /*    min-height: auto;*/
     height: 100%;
     margin: 0;
-      padding: 20px;
+    padding: 20px;
     width: auto;
   }
     
@@ -298,10 +298,12 @@ input {
     cursor: pointer;
   }
   
+/*
     .grid__item-inner {
-/*        height: 100%;*/
-/*        padding: 20px;*/
+        height: 100%;
+        padding: 20px;
     }    
+*/
 
 }
 
@@ -321,6 +323,7 @@ input {
 
 .work-img {
   width: 100%;
+  padding: 10px;
 }
 /* ------------------------------------ content case study---- */
 
@@ -368,8 +371,10 @@ input {
 }
 
 .case-study-container-2fr{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+    display: flex;
+    align-content: space-between;
 }
 
 .background-light {

@@ -256,10 +256,8 @@ button:focus,
 } */
 
 .work-img {
-  /* float: left; */
-  width: 100%;
-  /* margin-right: 40px; */
-  /* border-radius: 50%; */
+/*  width: 100%;*/
+    padding-right: 10px;
 }
 /* ------------------------------------ content case study---- */
 .case-study-content p {
