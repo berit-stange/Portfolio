@@ -37,53 +37,89 @@
     </header>
 
     <main class="case-study">
-        <div class="case-study-content">
+        <div class="case-study-container">
             <h1>Case Study: myMovies App</h1>
 
             <!-- BEGINNING: INTRODUCTION, PROBLEM + SOLUTION -->
-            <div class="case-study-container">
+
+            <div class="case-study-section">
                 <h2>INTRODUCTION</h2>
-                <p> myMovies is a web app for movie fans, that offers information about movies, directors, and genres.
-                    Users can create a profile, update their data, and collect their favorite movies.
-                    The project involved creating a RESTful API, building the databse with Mongo DB and
-                    the client-side using React/Redux and Bootstrap.
+                <p> myMovies is a web app for movie fans, that offers information about movies, directors, and
+                    genres.<br>
+                    Users can create a profile, update their data, and collect their favorite movies.<br>
+                    The project involved creating a RESTful API, building the databse with Mongo DB and the client-side
+                    using React/Redux and Bootstrap.<br>
+                    <!--                    On the technical side the requirement for the app was to use the MERN tech stack, be dynamic and single page, be responsive and has a pleasing and intuitive UI.-->
                 </p>
             </div>
 
-            <div class="case-study-container">
-                <h3>OBJECTIVE</h3>
-                <p>
-                    The app was supposed to satisfy an interest in movies: discover movies by title and let the user
-                    collect movies and offer further information, like showing what other movies a director has made.
-                    <br>
-                    On the technical side the requirement for the app was to be dynamic and single page, be responsive
-                    and has a pleasing and intuitive UI.
-                </p>
-
-                <h3>CONTEXT</h3>
-                <p>
-                    The myMovies application was part of the web development course at CareerFoundry to build
-                    skills in React and Redux, connecting to a self created API, build a database and implement
-                    Bootstrap for the UI.
-                </p>
+            <div class="case-study-section">
+                <div>
+                    <h3>OBJECTIVE</h3>
+                    <p>
+                        The aim of the project was build a web application using full-stack JavaScript technologies to
+                        showcase for my portfolio. <br>
+                        The problem to be solved was building the complete server-side and client-side for the
+                        application from scratch.
+                        <br>
+                        To achieve this, JavaScript development, web server frameworks, databases, business logic and
+                        authentication had to be mastered using the MERN tech stack.
+                    </p>
+                </div>
+                <div class="case-study-img">
+                    <img src="../img/my-movies-screenshot-movielist-2021-07-22.jpg" alt="" class="work-img">
+                    <p class="case-study-caption">Screenshot of finished app (main view with movie list)</p>
+                </div>
             </div>
+            <div class="case-study-section">
+                <div>
+                    <h3>CONTEXT</h3>
+                    <p>
+                        The myMovies application was part of the web development course at CareerFoundry to build skills
+                        in React and Redux, connecting to a self created API, build a database and implement Bootstrap
+                        for the UI. <br>
+                        The project brief described the features and the requirements accurately and the exercises were
+                        structured to follow this guideline.
+                    </p>
+                </div>
+                <div class="case-study-img">
+                    <img src="../img/my-movies-brief-01.png" alt="" class="work-img">
+                    <p class="case-study-caption">Project brief Careerfoundry (source: Careerfoundry)</p>
+                </div>
+            </div>
+
 
             <!-- MIDDLE PART: APPROACH + STEPS -->
-            <div class="background-light">
+
+            <div class="case-study-section">
                 <h2>APPROACH</h2>
-                <div class="case-study-container">
+                <div>
+                    <p>
+                        To build an app that serves movie fans with information, there had to be the server-side, that
+                        stores all the data, and the client-side, that has the user interface to enable movie fans to
+                        interact with all the information.
+                    </p>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <div class="case-study-img">
+                    <img src="../img/my-movies-screenshot-api-endpoints-3.jpg" alt="" class="work-img">
+                    <p class="case-study-caption">Creating the endpoints in the API</p>
+                </div>
+                <div>
                     <h3>1. Step: Create the Server Side</h3>
                     <p>
                         The first step was to create a RESTful API using Node.js and Express. For this, code with the
                         HTTP methods for the endpoints had to be written, while looking at the user stories from the
                         project brief. <br>
-                        After that I learned how to create database collections manually to learn the structure of the
-                        objects. After that the database was set up with Mongo DB. <br>
+                        After that the database was set up with Mongo DB. <br>
                     </p>
-                    <div>
-                        <img src="../img/my-movies-02_movie-by-title.png" alt="" class="work-img">
-                    </div>
-                    
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <div>
                     <h3>2. Step: Create the Client Side</h3>
                     <p>
                         In the second part of building the app, I created the components with React.<br>
@@ -98,32 +134,46 @@
                         At this point the first part of the project, the server side, came together with the client
                         side - all connected and accessible through the UI.
                     </p>
-                    
-                    <div>
-                        <img src="../img/my-movies-screenshot-movielist-2021-07-22.jpg" alt="" class="work-img">
-                    </div>
-                    
-                    <div class="case-study-container-2fr">
-                    <div>
-                        <img src="../img/my-movies-screenshot-movieview-2021-07-22.jpg" alt=""  class="work-img">
-                    </div>
-                    <div>
-                        <img src="../img/my-movies-screenshot-profile-2021-07-22.jpg" alt="" class="work-img">
-                    </div>
-                    </div>
-                    
+                </div>
+
+                <div class="case-study-img">
+                    <img src="../img/my-movies-screenshot-movielist-resp-2.jpg" alt="" class="work-img">
+                    <p class="case-study-caption">Main view with movie list and search function</p>
                 </div>
             </div>
 
-            <!-- END: CHALLENGE + FURTHER STEPS -->
-            <h2>CHALLENGES, DURATION + STEPS</h2>
-            <div class="case-study-container">
-                <h3>CHALLENGES</h3>
+            <!-- LARGE IMAGE -->
+            <div class="case-study-section">
+                <div class="case-study-img">
+                    <img src="../img/my-movies-screenshot-movieview-2021-07-22.jpg" alt="" class="work-img">
+                    <p class="case-study-caption">Movie view with dteails about movie</p>
+                </div>
+                <div class="case-study-img">
+                    <img src="../img/my-movies-screenshot-genre-2021-08-03-b.jpg" alt="" class="work-img">
+                    <p class="case-study-caption">Profile view with favorite movies of user and form</p>
+                </div>
+            </div>
+
+            <!-- LARGE IMAGE -->
+            <div class="case-study-section-img-full">
+                <img src="../img/my-movies-screenshot-profile-b.jpg" alt="" class="work-img">
+                <p class="case-study-caption">Profile view with favorite movies of user and form</p>
+            </div>
+
+            <div class="case-study-section-img-full">
+                <img src="../img/my-movies-screenshot-filtering-favs-3.jpg" alt="" class="work-img">
+                <p class="case-study-caption">Filtering the favorite movies of a user in the profile view</p>
+            </div>
+
+
+            <!-- END: REFLECTION + FURTHER STEPS -->
+
+            <div class="case-study-section">
+                <h2>REFLECTION</h2>
                 <p>
                     It was challenging to understand the general structure of React and the use of props and state, how
                     things are connected, how data is passed between components and how it can be accessed in the
-                    database
-                    to be used in the functions. <br>
+                    database to be used in the functions. <br>
                     I found it difficult to find the right way to filter the favorite movies of a user and to implement
                     the authetication. <br>
                     To keep an orientation I got help from my mentor and a React developer I know.
@@ -131,17 +181,20 @@
 
                 <h3>DURATION + NEXT STEPS</h3>
                 <p>
-                    Both parts of the application together, the server side and the client side, took me about 2
-                    months.<br>
+                    Both parts of the application together, the server side and the client side, took me about 2 months.
+                </p>
+                <p>
                     The next step will be to refactor the code using Redux Thunk, structure code differently, isolate
                     the function. Also some work on the buttons in the profile view could be made.
-                    <br>
                 </p>
 
+            </div>
+
+            <!-- LINKS -->
+            <div class="case-study-links">
                 <h3>LINKS</h3>
                 <a href="https://mymovies-app.netlify.app/">See Web Application |</a>
                 <a href="https://github.com/berit-stange/myMovies-client">See Code on GitHub</a>
-
             </div>
 
         </div>
