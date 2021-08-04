@@ -322,11 +322,11 @@ input {
 }
 
 .bg-image-work-01 {
-  background-image: url(/img/amelie-index-sw.jpg);
+  background-image: url(../img/amelie-index-sw.jpg);
 }
     
 .bg-image-work-02 {
-  background-image: url(/img/meet-app-01-sw.jpg);
+  background-image: url(../img/meet-app-01-sw.jpg);
 }
     
 .bg-image-work-03 {
@@ -334,7 +334,7 @@ input {
 }
     
 .bg-image-work-04 {
-  background-image: url(/img/limoncello-index-sw.jpg);
+  background-image: url(../img/limoncello-index-sw.jpg);
 }
     
 .bg-image-work-05 {
@@ -350,14 +350,14 @@ input {
 }
     
 .bg-image-work-08 {
-  background-image: url(/img/my-movies-screenshot-movielist-2021-07-22-sw.jpg);
+  background-image: url(../img/my-movies-screenshot-movielist-2021-07-22-sw.jpg);
 }
 
 /* ------------------------------------ content case study---- */
 
-.case-study {
-/*    padding-top: 20px;*/
-}
+/* .case-study {
+   padding-top: 20px;
+} */
 
 .case-study h1 {
     text-align: center;
@@ -416,12 +416,6 @@ input {
 .case-study-links {
     text-align: center;
 }
-
-/*
-.case-study-links a {
-    color: red;
-}
-*/
 
 .background-light {
     background-color: var(--base-color-light);
@@ -556,4 +550,6 @@ textarea {
     border: none;
     height: 50px;
     width: 60%;
+}
+
 }
