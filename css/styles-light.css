@@ -253,12 +253,9 @@ input {
   }
 
   .grid__item {
-/*    background-color: var(--base-color);*/
-/*      background-color: rgba(var(--base-color), 0.5);*/
-/*    min-height: auto;*/
     height: 100%;
     margin: 0;
-/*    padding: 20px;*/
+    padding: 20px;
     width: auto;
   }
     
@@ -322,19 +319,19 @@ input {
 }
 
 .bg-image-work-01 {
-  background-image: url(../img/amelie-index-sw.jpg);
+  background-image: url(../img/amelie-01-sw.jpg);
 }
     
 .bg-image-work-02 {
-  background-image: url(../img/meet-app-01-sw.jpg);
+  background-image: url(../img/meet-app-01-sw2.jpg);
 }
     
 .bg-image-work-03 {
-  background-image: url();
+  background-image: url(../img/lissa-index-sw2.jpg);
 }
     
 .bg-image-work-04 {
-  background-image: url(../img/limoncello-index-sw.jpg);
+  background-image: url(../img/limoncello-index-sw2.jpg);
 }
     
 .bg-image-work-05 {
@@ -350,7 +347,7 @@ input {
 }
     
 .bg-image-work-08 {
-  background-image: url(../img/my-movies-screenshot-movielist-2021-07-22-sw.jpg);
+  background-image: url(../img/my-movies-screenshot-movielist-2021-07-22-sw3.jpg);
 }
 
 /* ------------------------------------ content case study---- */
