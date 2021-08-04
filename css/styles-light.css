@@ -253,11 +253,12 @@ input {
   }
 
   .grid__item {
-    background-color: var(--base-color);
+/*    background-color: var(--base-color);*/
+/*      background-color: rgba(var(--base-color), 0.5);*/
 /*    min-height: auto;*/
     height: 100%;
     margin: 0;
-    padding: 20px;
+/*    padding: 20px;*/
     width: auto;
   }
     
@@ -292,15 +293,6 @@ input {
     margin: 0;
     cursor: pointer;
   }
-  
-/*
-    .grid__item-inner {
-        height: 100%;
-        padding: 20px;
-    }    
-*/
-
-}
 
 /* ------------------------------------ content ---- */
 
@@ -320,6 +312,47 @@ input {
   width: 100%;
   padding: 10px;
 }
+
+.bg-img-work {
+  background-color: var(--base-color);
+  background-blend-mode:soft-light;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-image-work-01 {
+  background-image: url(/img/amelie-index-sw.jpg);
+}
+    
+.bg-image-work-02 {
+  background-image: url(/img/meet-app-01-sw.jpg);
+}
+    
+.bg-image-work-03 {
+  background-image: url();
+}
+    
+.bg-image-work-04 {
+  background-image: url(/img/limoncello-index-sw.jpg);
+}
+    
+.bg-image-work-05 {
+  background-image: url();
+}
+    
+.bg-image-work-06 {
+  background-image: url();
+}
+    
+.bg-image-work-07 {
+  background-image: url();
+}
+    
+.bg-image-work-08 {
+  background-image: url(/img/my-movies-screenshot-movielist-2021-07-22-sw.jpg);
+}
+
 /* ------------------------------------ content case study---- */
 
 .case-study {
@@ -328,6 +361,10 @@ input {
 
 .case-study h1 {
     text-align: center;
+}
+    
+.case-study h2, p {
+    font-weight: bold;
 }
 
 .case-study a {
