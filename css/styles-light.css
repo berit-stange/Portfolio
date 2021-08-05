@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+/* @import url('https://allfont.net/allfont.css?fonts=cooperhewitt-heavy'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
+
 :root {
 /*  --accent-color: #e66771; */
 /*  --base-color: blue;  */
@@ -27,9 +32,11 @@
   --accent-color: #070f9c; 
 */
     
-/* NEW COLOR VARIABLES > "Aths Special #edeed4 & Persian Blue #1339e3" (zu grell zum lesen)*/
-  --base-color: #ebecd6;
-  --base-color-light: #feffeb; 
+/* NEW COLOR VARIABLES > "Aths Special #edeed4 & Persian Blue #1339e3" (zu grell zum lesen)  #F4F3F1 */
+  /* --base-color: #ebecd6; */
+  /* --base-color-light: #feffeb;  */
+  --base-color: #e2dfd8;
+  --base-color-light: #F4F3F1; 
   --dark-color: #27336b;
   --accent-color: #1339e3;   
     
@@ -41,13 +48,17 @@
   --accent-color: #090e9e;   
 */
     
-  --font-sans: 'Karla', sans-serif;
-  --font-serif: 'Lora', serif;
+  /* --font-sans: 'Karla', sans-serif; */
+  --font-sans: 'Montserrat', sans-serif;
+  /* --font-serif: 'Lora', serif; */
+  /* --font-headline: 'Anton', sans-serif; */
+  /* --font-headline: 'CooperHewitt-Heavy', sans-serif; */
+  --font-serif: 'Roboto Slab', serif;
   --font-big: 60px;
   --font-medium: 30px;
   --font-small: 16px;
   --font-tiny: 12px;
-  --font-heavy: 700;
+  --font-heavy: 600;
   --font-light: 400;
 }
 
@@ -79,7 +90,7 @@ h1 {
 h2 {
   font-family: var(--font-serif);
   font-size: var(--font-medium);
-  font-weight: var(--font-heavy);
+  /* font-weight: var(--font-heavy); */
   color: var(--accent-color);
 /*  margin: 0;*/
 }
@@ -269,6 +280,10 @@ input {
   .grid a{
     text-decoration: none;
   }
+
+  .grid p {
+    font-weight: var(--font-heavy);
+  }
     
   .grid__item:hover h2, 
   .grid__item:hover a, 
@@ -295,6 +310,7 @@ input {
 
 .main-content {
   max-width: 900px;
+  /* width: 80%; */
   margin: 0 auto;
   text-align: center;
   padding-top: 20px;
@@ -360,12 +376,12 @@ input {
     text-align: center;
 }
     
-.case-study h2, p {
+.case-study h2 {
     font-weight: var(--font-heavy);
 }
 
 .case-study a {
-   font-family: var(--font-serif);
+  font-family: var(--font-serif);
   font-size: var(--font-small);
   font-weight: var(--font-heavy);
 }
@@ -434,11 +450,17 @@ input {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  h1 {
+    font-size: var(--font-medium);
+  }
+
 }
 
 /* shared code */
 @media all and (max-width: 750px) {
   .grid {
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
 
@@ -448,7 +470,7 @@ input {
   }
 
   h1 {
-    font-size: var(--font-medium);
+    font-size: var(--font-big);
   }
 }
 
