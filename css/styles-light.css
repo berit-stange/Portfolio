@@ -335,7 +335,7 @@ input {
 }
 
 .bg-image-work-01 {
-  background-image: url(../img/amelie-01-sw.jpg);
+  background-image: url(../img/chat-app-03.jpg);
 }
     
 .bg-image-work-02 {
@@ -343,11 +343,11 @@ input {
 }
     
 .bg-image-work-03 {
-  background-image: url(../img/lissa-index-sw2.jpg);
+  background-image: url();
 }
     
 .bg-image-work-04 {
-  background-image: url(../img/limoncello-index-sw2.jpg);
+  background-image: url(../img/pokemon-app-08.jpg);
 }
     
 .bg-image-work-05 {
@@ -355,11 +355,11 @@ input {
 }
     
 .bg-image-work-06 {
-  background-image: url();
+  background-image: url(../img/lissa-index-sw2.jpg);
 }
     
 .bg-image-work-07 {
-  background-image: url();
+  background-image: url(../img/limoncello-index-sw2.jpg);
 }
     
 .bg-image-work-08 {
