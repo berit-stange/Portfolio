@@ -57,6 +57,9 @@
   --font-big: 60px;
   --font-medium: 30px;
   --font-small: 16px;
+  --font-big-mq1: 40px;
+  --font-medium-mq1: 30px;
+  --font-small-mq1: 14px;
   --font-tiny: 12px;
   --font-heavy: 600;
   --font-light: 400;
@@ -104,7 +107,7 @@ h3 {
 
 a {
   color: var(--accent-color);
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 a:visited {
@@ -237,7 +240,7 @@ input {
 .page-footer {
   background-color: var(--base-color-light);
 /*  clear: both;*/
-  color: var(--dark-color);
+  /* color: var(--dark-color); */
   display: flex;
   flex-direction: column;
   padding-top: 100px;
@@ -319,6 +322,13 @@ input {
 
 .main-content__table {
   margin: 0 auto;
+  padding: 30px;
+}
+
+.table-section {
+  /* border-bottom: 1px solid  var(--base-color); */
+  margin: 0 auto;
+  max-width: 75%;
 }
 
 .work-img {
@@ -335,7 +345,7 @@ input {
 }
 
 .bg-image-work-01 {
-  background-image: url(../img/chat-app-03.jpg);
+  background-image: url(../img/chat-app-01sw.jpg);
 }
     
 .bg-image-work-02 {
@@ -343,11 +353,11 @@ input {
 }
     
 .bg-image-work-03 {
-  background-image: url();
+  background-image: url(../img/my-movies-angular-03sw.jpg);
 }
     
 .bg-image-work-04 {
-  background-image: url(../img/pokemon-app-08.jpg);
+  background-image: url(../img/pokemon-app-03sw.jpg);
 }
     
 .bg-image-work-05 {
@@ -363,10 +373,10 @@ input {
 }
     
 .bg-image-work-08 {
-  background-image: url(../img/my-movies-screenshot-movielist-2021-07-22-sw3.jpg);
+  background-image: url(../img/my-movies-screenshot-movielist-2021-07-22-sw5.jpg);
 }
 
-/* ------------------------------------ content case study---- */
+/* ------------------------------------ content case study ---------------------------------- */
 
 /* .case-study {
    padding-top: 20px;
@@ -392,7 +402,7 @@ input {
     padding: 20px 0px 0px 0px;
 }
 
-.case-study-section {
+.case-study-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 75%;
@@ -404,6 +414,28 @@ input {
 
 .case-study-section p {
   font-weight: var(--font-light);
+}
+
+.about-me-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid  var(--base-color); */
+}
+
+.about-me-section p {
+  font-weight: var(--font-light);
+  padding-right: 20px;
+  text-align: left;
+}
+
+.about-me-section h2 {
+  /* font-weight: var(--font-light); */
+  padding-left: 20px;
+  text-align: left;
 }
 
 .case-study-section-2fr{
@@ -470,8 +502,15 @@ input {
   }
 
   h1 {
-    font-size: var(--font-big);
+    /* font-size: var(--font-big); */
+    font-size: var(--font-big-mq1);
   }
+
+  h2 {
+    /* font-size: var(--font-big); */
+    font-size: var(--font-medium-mq1);
+  }
+
 }
 
 
