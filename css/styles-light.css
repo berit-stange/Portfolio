@@ -27,7 +27,7 @@
   /* --font-headline: 'Anton', sans-serif; */
   /* --font-headline: 'CooperHewitt-Heavy', sans-serif; */
   --font-serif: 'Roboto Slab', serif;
-  --font-big: 60px;
+  --font-big: 50px;
   --font-medium: 30px;
   --font-small: 16px;
   --font-big-mq1: 40px;
@@ -60,6 +60,7 @@ h1 {
   font-size: var(--font-big);
   font-weight: var(--font-heavy);
   color: var(--accent-color);
+  line-height: 1.2;
 /*  margin: 0;*/
 }
 
@@ -69,6 +70,13 @@ h2 {
   /* font-weight: var(--font-heavy); */
   color: var(--accent-color);
 /*  margin: 0;*/
+}
+
+.subtitle {
+  text-align: center;
+  line-height: 1.1;
+  padding-bottom: 50px;
+  margin: 0;
 }
 
 h3 {
@@ -447,13 +455,63 @@ input {
 
 /* -----------------------------------------------------2020-12-15 media queries ---- */
 @media all and (max-width: 500px) {
+  /* --------------- grid fallback */
+.grid__item {
+  display: inline-block;
+  width: 100%;
+}
+/* --------------- grid fallback */
+  
   .grid {
     grid-template-columns: 1fr;
   }
 
-  p {
-    font-size: var(--font-small-mq1);
+  body, p,
+  .grid__item p {
+    font-size: 13px;
+    padding: 0px;
   }
+
+  .grid__item h2 {
+    font-size: 22px;
+    line-height: 1.5;
+    padding: 0px;
+  }
+
+  .grid__item {
+    /* max-height: 300px; */
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    display: block;
+    padding: 10px;
+    text-align: center;
+ } 
+  .page-header__item {
+     flex: 1;
+  }
+
+  .navigation-list, 
+  ul,
+  .navigation-list li {
+    text-align: center;
+    margin-left: 0px;
+    padding: 10px;
+  }
+
+  .profile__portrait {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+  }
+
+  .about-me-section p {
+    padding: 0px;
+  }
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -465,12 +523,25 @@ input {
     font-size: var(--font-medium);
   }
 
+  .page-header {
+    display: block;
+    padding: 10px;
+    text-align: center;
+ } 
+  .page-header__item {
+     flex: 1;
+  }
+
+  .navigation-list, ul {
+    text-align: center;
+    padding: 0;
+  }
+
 }
 
 /* shared code */
 @media all and (max-width: 750px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
 
@@ -480,14 +551,13 @@ input {
   }
 
   h1 {
-    /* font-size: var(--font-big); */
     font-size: var(--font-big-mq1);
+    text-align: center;
   }
 
   h2,
   .case-study-section h2,
   .about-me-section h2 {
-    /* font-size: var(--font-big); */
     font-size: var(--font-medium-mq1);
     text-align: center;
   }
