@@ -4,33 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
 
 :root {
-/*  --accent-color: #e66771; */
-/*  --base-color: blue;  */
-/*  --dark-color: #002238;*/
-    
-/* NEW COLOR VARIABLES > "Satin Linen & Smalt" */
-/*
-  --base-color: #ebe8df;
-  --base-color-light: rgba(235, 232, 223, 0.57); 
-  --dark-color: #013E98;
-  --accent-color: #013E98;  
-*/
-    
-/* NEW COLOR VARIABLES > "Ebb & Eden" (eher grünlich)*/
-/*
-  --base-color: #E7E0DD;
-  --base-color-light: rgba(231, 224, 221, 0.5); 
-  --dark-color: #0F4160;
-  --accent-color: #0F4160; 
-*/
-    
-/* NEW COLOR VARIABLES > "Periglacial Blue & Ultramarine" */
-/*
-  --base-color: #e1e4d7;
-  --base-color-light: rgba(225, 228, 215, 0.5); 
-  --dark-color: #070f9c;
-  --accent-color: #070f9c; 
-*/
     
 /* NEW COLOR VARIABLES > "Aths Special #edeed4 & Persian Blue #1339e3" (zu grell zum lesen)  #F4F3F1 */
   /* --base-color: #ebecd6; */
@@ -74,7 +47,7 @@ body {
   font-family: var(--font-sans);
   font-weight: var(--font-light);
   font-size: var(--font-small);
-  line-height: 1.6;
+  line-height: 1.9;
   background-color: var(--base-color-light);
 /*  background-color: var(--base-color);*/
   color: var(--dark-color);
@@ -477,6 +450,10 @@ input {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  p {
+    font-size: var(--font-small-mq1);
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -507,10 +484,33 @@ input {
     font-size: var(--font-big-mq1);
   }
 
-  h2 {
+  h2,
+  .case-study-section h2,
+  .about-me-section h2 {
     /* font-size: var(--font-big); */
     font-size: var(--font-medium-mq1);
+    text-align: center;
   }
+
+  h3 {
+    font-size: var(--font-small-mq1);
+    text-align: center;
+  }
+
+  .case-study-section,
+  .about-me-section {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    /* max-width: 75%; */
+    /* margin: 0 auto; */
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    /* border-bottom: 1px solid  var(--base-color); */
+}
+
+.about-me-section img {
+  justify-self: center;
+}
 
 }
 
